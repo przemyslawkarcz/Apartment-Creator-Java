@@ -1,0 +1,29 @@
+package ApartmentCreator;
+
+public class ControlClass {
+
+    public static Integer controlsDataFormat(String someText) throws ApartmentCreatorDataFormatException{
+
+        try {
+
+            return Integer.parseInt(someText);
+
+        }catch (NumberFormatException e){
+
+            throw new ApartmentCreatorDataFormatException(someText);
+
+        }
+
+    }
+
+    public static Integer controlsRoomsNumber(Integer someRoomsNumber){
+
+        if (someRoomsNumber >= 11 || someRoomsNumber < 0){
+            System.out.println("Do not overdo with it :)");
+            System.out.println("10 bedrooms is maximum.");
+            return 7778;
+        }
+        return someRoomsNumber;
+    }
+
+}
