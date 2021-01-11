@@ -2,6 +2,7 @@ package ApartmentCreator.Colors;
 
 public enum Colors {
 
+    // list of colors available in this demo project
     Grey100("Grey 100%"),
     Grey90("Grey 90%"),
     Grey80("Grey 80%"),
