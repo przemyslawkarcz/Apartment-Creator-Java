@@ -1,4 +1,4 @@
-package ApartmentCreator;
+package ApartmentCreator.Exceptions;
 
 public class ApartmentCreatorDataFormatException extends Exception{
 

@@ -1,8 +1,11 @@
-package ApartmentCreator;
+package ApartmentCreator.Rooms;
+
+import ApartmentCreator.Colors.Colors;
+import ApartmentCreator.Equipment.*;
 
 import java.util.ArrayList;
 
-import static ApartmentCreator.Colors.Grey60;
+import static ApartmentCreator.Colors.Colors.Grey60;
 
 public class Kitchen extends Room{
 

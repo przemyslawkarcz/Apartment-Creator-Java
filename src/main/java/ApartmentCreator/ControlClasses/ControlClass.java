@@ -1,8 +1,10 @@
-package ApartmentCreator;
+package ApartmentCreator.ControlClasses;
+
+import ApartmentCreator.Exceptions.ApartmentCreatorDataFormatException;
 
 public class ControlClass {
 
-    public static Integer controlsDataFormat(String someText) throws ApartmentCreatorDataFormatException{
+    public static Integer controlsDataFormat(String someText) throws ApartmentCreatorDataFormatException {
 
         try {
 

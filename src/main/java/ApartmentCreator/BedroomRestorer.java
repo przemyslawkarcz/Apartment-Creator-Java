@@ -1,5 +1,9 @@
 package ApartmentCreator;
 
+import ApartmentCreator.Colors.Colors;
+import ApartmentCreator.Rooms.Bedroom;
+import ApartmentCreator.Rooms.Room;
+
 public class BedroomRestorer {
 
     // If you want to change anything in your bedroom use this class

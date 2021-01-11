@@ -1,4 +1,10 @@
-package ApartmentCreator;
+package ApartmentCreator.Rooms;
+
+import ApartmentCreator.Colors.Colors;
+import ApartmentCreator.Equipment.Furniture;
+import ApartmentCreator.Equipment.HousePlants;
+import ApartmentCreator.Equipment.LightingAccessories;
+import ApartmentCreator.Equipment.WindowAccessories;
 
 import java.util.ArrayList;
 

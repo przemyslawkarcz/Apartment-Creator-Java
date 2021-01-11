@@ -1,9 +1,12 @@
-package ApartmentCreator;
+package ApartmentCreator.Rooms;
+
+import ApartmentCreator.Exceptions.ApartmentCreatorDataFormatException;
+import ApartmentCreator.PrintClasses.PrintOutBuilder;
 
 import java.util.Scanner;
-import static ApartmentCreator.ControlClass.controlsDataFormat;
-import static ApartmentCreator.ControlClass.controlsRoomsNumber;
-import static ApartmentCreator.PrintOutBuilder.printsWelcomeContent;
+import static ApartmentCreator.ControlClasses.ControlClass.controlsDataFormat;
+import static ApartmentCreator.ControlClasses.ControlClass.controlsRoomsNumber;
+import static ApartmentCreator.PrintClasses.PrintOutBuilder.printsWelcomeContent;
 
 public class ApartmentBuilder {
 
@@ -38,7 +41,7 @@ public class ApartmentBuilder {
         // End of control block - - - - - - - - - - - - - - - -
 
         // Creates new apartment. New Apartment is an array.
-        Room [] newApartment = new Room[returnedInspectedRoomsNumber + 3];
+        Room[] newApartment = new Room[returnedInspectedRoomsNumber + 3];
 
         Apartment apartment = new Apartment();
         apartment.setApartment(newApartment);

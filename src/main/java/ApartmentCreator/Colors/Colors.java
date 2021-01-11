@@ -1,4 +1,4 @@
-package ApartmentCreator;
+package ApartmentCreator.Colors;
 
 public enum Colors {
 

@@ -1,4 +1,4 @@
-package ApartmentCreator;
+package ApartmentCreator.Equipment;
 
 public class WindowAccessories {
 

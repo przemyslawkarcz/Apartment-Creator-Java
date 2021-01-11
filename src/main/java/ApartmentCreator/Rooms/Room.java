@@ -1,8 +1,10 @@
-package ApartmentCreator;
+package ApartmentCreator.Rooms;
+
+import ApartmentCreator.Colors.Colors;
 
 import java.util.ArrayList;
 
-public class Room extends Apartment{
+public class Room extends Apartment {
 
     public String roomName;
     public Integer roomHeight;

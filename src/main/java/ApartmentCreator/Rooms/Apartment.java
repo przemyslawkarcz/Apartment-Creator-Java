@@ -1,10 +1,10 @@
-package ApartmentCreator;
+package ApartmentCreator.Rooms;
 
 import java.util.Arrays;
 
 public class Apartment {
 
-    public Room [] apartment;
+    public Room[] apartment;
     public static Integer apartmentHeight;
 
     public Room[] getApartment() {

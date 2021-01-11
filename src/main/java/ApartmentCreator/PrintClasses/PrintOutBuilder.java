@@ -1,4 +1,6 @@
-package ApartmentCreator;
+package ApartmentCreator.PrintClasses;
+
+import ApartmentCreator.Rooms.*;
 
 import java.util.ArrayList;
 import java.util.Iterator;
