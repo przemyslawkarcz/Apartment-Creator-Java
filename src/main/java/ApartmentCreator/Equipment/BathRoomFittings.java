@@ -2,8 +2,6 @@ package ApartmentCreator.Equipment;
 
 public class BathRoomFittings {
 
-    // aramtura, prysznic, wanna, toaleta, umywalka, bidet,
-
     public String shower;
     public String bath;
     public String toilet;
