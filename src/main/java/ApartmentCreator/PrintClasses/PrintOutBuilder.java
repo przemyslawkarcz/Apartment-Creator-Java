@@ -1,11 +1,12 @@
 package ApartmentCreator.PrintClasses;
 
 import ApartmentCreator.Rooms.*;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class PrintOutBuilder {
+
+    // the class includes a set of printing methods for furnishing different rooms
 
     public static void printsWelcomeContent(){
 
