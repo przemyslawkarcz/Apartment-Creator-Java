@@ -16,10 +16,10 @@ public class BathRoom extends Room {
     public ArrayList<String> bathRoomFurnitureList = new ArrayList<>();
     public ArrayList<String> bathRoomLightingAccessoriesList = new ArrayList<>();
 
-    public ArrayList<String> bathRoomHouseholdItemsList = new ArrayList<>(); // agd pralka, suszarka,
-    public ArrayList<String> bathroomFittings = new ArrayList<>(); // aramtura, prysznic, wanna, toaleta, umywalka,
-    public ArrayList<String> bathroomToiletries = new ArrayList<>(); // środki toaletowe, papier toaletowy, chusteczki, waciki, podpaski, mydła, żele
-    public ArrayList<String> bathRoomPersonalItems = new ArrayList<>(); // środki osobiste, ręczniki, szczoteczki do zębów
+    public ArrayList<String> bathRoomHouseholdItemsList = new ArrayList<>();
+    public ArrayList<String> bathroomFittings = new ArrayList<>();
+    public ArrayList<String> bathroomToiletries = new ArrayList<>();
+    public ArrayList<String> bathRoomPersonalItems = new ArrayList<>(); 
 
     public BathRoom() {}
 
