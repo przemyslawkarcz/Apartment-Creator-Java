@@ -4,6 +4,7 @@ import ApartmentCreator.Exceptions.ApartmentCreatorDataFormatException;
 
 public class ControlClass {
 
+    // method that checks data format
     public static Integer controlsDataFormat(String someText) throws ApartmentCreatorDataFormatException {
 
         try {
@@ -18,6 +19,7 @@ public class ControlClass {
 
     }
 
+    // method that checks rooms number
     public static Integer controlsRoomsNumber(Integer someRoomsNumber){
 
         if (someRoomsNumber >= 11 || someRoomsNumber < 0){
