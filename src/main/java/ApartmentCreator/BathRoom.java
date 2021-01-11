@@ -19,7 +19,7 @@ public class BathRoom extends Room {
     public ArrayList<String> bathRoomHouseholdItemsList = new ArrayList<>();
     public ArrayList<String> bathroomFittings = new ArrayList<>();
     public ArrayList<String> bathroomToiletries = new ArrayList<>();
-    public ArrayList<String> bathRoomPersonalItems = new ArrayList<>(); 
+    public ArrayList<String> bathRoomPersonalItems = new ArrayList<>();
 
     public BathRoom() {}
 
@@ -176,6 +176,7 @@ public class BathRoom extends Room {
                 '}';
     }
 
+    // main method which builds kitchen
     public BathRoom createsBathRoom(){
 
         BathRoom bathRoom = new BathRoom("Bathroom", Apartment.getApartmentHeight(), 5, 5, Colors.Grey10,
