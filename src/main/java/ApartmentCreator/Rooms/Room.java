@@ -13,11 +13,11 @@ public class Room extends Apartment {
 
     public Colors roomColors;
 
-    public ArrayList roomWindowAccessoriesList;
-    public ArrayList roomHousePlantsList;
-    public ArrayList roomDecorativeAccessoriesList;
-    private ArrayList roomFurnitureList;
-    public ArrayList roomLightingAccessoriesList;
+    public ArrayList<String> roomWindowAccessoriesList;
+    public ArrayList<String> roomHousePlantsList;
+    public ArrayList<String> roomDecorativeAccessoriesList;
+    public ArrayList<String> roomFurnitureList;
+    public ArrayList<String> roomLightingAccessoriesList;
 
     public String getRoomName() {
         return roomName;
@@ -55,60 +55,60 @@ public class Room extends Apartment {
 
     public void setWallColors(Colors wallColors) { this.roomColors = wallColors;}
 
-    public ArrayList getRoomFurnitureList() {
-        return roomFurnitureList;
-    }
-
-    public void setRoomFurnitureList(ArrayList roomFurnitureList) {
-        this.roomFurnitureList = roomFurnitureList;
-    }
-
-    public ArrayList getRoomLightingAccessoriesList() {
-        return roomLightingAccessoriesList;
-    }
-
-    public void setRoomLightingAccessoriesList(ArrayList roomLightingAccessoriesList) {
-        this.roomLightingAccessoriesList = roomLightingAccessoriesList;
-    }
-
-    public ArrayList getRoomWindowAccessoriesList() {
+    public ArrayList<String> getRoomWindowAccessoriesList() {
         return roomWindowAccessoriesList;
     }
 
-    public void setRoomWindowAccessoriesList(ArrayList roomWindowAccessoriesList) {
+    public void setRoomWindowAccessoriesList(ArrayList<String> roomWindowAccessoriesList) {
         this.roomWindowAccessoriesList = roomWindowAccessoriesList;
     }
 
-    public ArrayList getRoomHousePlantsList() {
+    public ArrayList<String> getRoomHousePlantsList() {
         return roomHousePlantsList;
     }
 
-    public void setRoomHousePlantsList(ArrayList roomHousePlantsList) {
+    public void setRoomHousePlantsList(ArrayList<String> roomHousePlantsList) {
         this.roomHousePlantsList = roomHousePlantsList;
     }
 
-    public ArrayList getRoomDecorativeAccessoriesList() {
+    public ArrayList<String> getRoomDecorativeAccessoriesList() {
         return roomDecorativeAccessoriesList;
     }
 
-    public void setRoomDecorativeAccessoriesList(ArrayList roomDecorativeAccessoriesList) {
+    public void setRoomDecorativeAccessoriesList(ArrayList<String> roomDecorativeAccessoriesList) {
         this.roomDecorativeAccessoriesList = roomDecorativeAccessoriesList;
+    }
+
+    public ArrayList<String> getRoomFurnitureList() {
+        return roomFurnitureList;
+    }
+
+    public void setRoomFurnitureList(ArrayList<String> roomFurnitureList) {
+        this.roomFurnitureList = roomFurnitureList;
+    }
+
+    public ArrayList<String> getRoomLightingAccessoriesList() {
+        return roomLightingAccessoriesList;
+    }
+
+    public void setRoomLightingAccessoriesList(ArrayList<String> roomLightingAccessoriesList) {
+        this.roomLightingAccessoriesList = roomLightingAccessoriesList;
     }
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Room{");
-        sb.append("roomName='").append(roomName).append('\'');
-        sb.append(", roomHeight=").append(roomHeight);
-        sb.append(", roomWidth=").append(roomWidth);
-        sb.append(", roomLength=").append(roomLength);
-        sb.append(", wallColors=").append(roomColors);
-        sb.append(", roomWindowAccessoriesList=").append(roomWindowAccessoriesList);
-        sb.append(", roomHousePlantsList=").append(roomHousePlantsList);
-        sb.append(", roomDecorativeAccessoriesList=").append(roomDecorativeAccessoriesList);
-        sb.append(", roomFurnitureList=").append(getRoomFurnitureList());
-        sb.append(", roomLightingAccessoriesList=").append(roomLightingAccessoriesList);
-        sb.append('}');
-        return sb.toString();
+        return "Room{" +
+                "roomName='" + roomName + '\'' +
+                ", roomHeight=" + roomHeight +
+                ", roomWidth=" + roomWidth +
+                ", roomLength=" + roomLength +
+                ", roomColors=" + roomColors +
+                ", roomWindowAccessoriesList=" + roomWindowAccessoriesList +
+                ", roomHousePlantsList=" + roomHousePlantsList +
+                ", roomDecorativeAccessoriesList=" + roomDecorativeAccessoriesList +
+                ", roomFurnitureList=" + roomFurnitureList +
+                ", roomLightingAccessoriesList=" + roomLightingAccessoriesList +
+                '}';
     }
+    
 }
