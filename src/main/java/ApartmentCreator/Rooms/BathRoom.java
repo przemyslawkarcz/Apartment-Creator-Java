@@ -25,6 +25,10 @@ public class BathRoom extends Room {
 
     public BathRoom() {}
 
+    public BathRoom(String bathRoomName) {
+        this.bathRoomName = bathRoomName;
+    }
+
     public BathRoom(String bathRoomName, Integer bathRoomHeight, Integer bathRoomWidth, Integer bathRoomLength, Colors wallColors,
                     ArrayList<String> bathRoomWindowAccessoriesList, ArrayList<String> bathRoomHousePlantsList,
                     ArrayList<String> bathRoomDecorativeAccessoriesList, ArrayList<String> bathRoomFurnitureList,
