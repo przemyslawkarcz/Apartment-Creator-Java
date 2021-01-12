@@ -1,7 +1,6 @@
 package ApartmentCreator.Rooms;
 
 import ApartmentCreator.Colors.Colors;
-
 import java.util.ArrayList;
 
 public class Room extends Apartment {

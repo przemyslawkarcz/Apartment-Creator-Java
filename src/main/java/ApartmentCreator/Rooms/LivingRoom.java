@@ -2,7 +2,6 @@ package ApartmentCreator.Rooms;
 
 import ApartmentCreator.Colors.Colors;
 import ApartmentCreator.Equipment.*;
-
 import java.util.ArrayList;
 
 public class LivingRoom extends Room{
@@ -147,6 +146,7 @@ public class LivingRoom extends Room{
                 '}';
     }
 
+    // main method that builds a living room
     public LivingRoom createsLivingroom(){
 
         LivingRoom livingroom = new LivingRoom("Livingroom", Apartment.getApartmentHeight(), 1, 1, Colors.Grey20,
