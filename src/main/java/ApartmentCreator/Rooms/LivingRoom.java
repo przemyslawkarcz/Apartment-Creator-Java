@@ -17,10 +17,13 @@ public class LivingRoom extends Room{
     public ArrayList<String> livingRoomDecorativeAccessoriesList = new ArrayList<>();
     public ArrayList<String> livingRoomFurnitureList = new ArrayList<>();
     public ArrayList<String> livingRoomLightingAccessoriesList = new ArrayList<>();
-
     public ArrayList<String> livingRoomAudioVideoItems = new ArrayList<>();
 
     public LivingRoom() {}
+
+    public LivingRoom(String livingRoomName) {
+        this.livingRoomName = livingRoomName;
+    }
 
     public LivingRoom(String livingroomName, Integer livingRoomHeight, Integer livingRoomWidth, Integer livingRoomLength, Colors wallColors,
                       ArrayList<String> livingRoomWindowAccessoriesList, ArrayList<String> livingRoomHousePlantsList,
@@ -149,7 +152,7 @@ public class LivingRoom extends Room{
     // main method that builds a living room
     public LivingRoom createsLivingroom(){
 
-        LivingRoom livingroom = new LivingRoom("Livingroom", Apartment.getApartmentHeight(), 1, 1, Colors.Grey20,
+        LivingRoom livingroom = new LivingRoom("Livingroom", Apartment.getApartmentHeight(), 10, 10, Colors.Grey20,
                 livingRoomWindowAccessoriesList, livingRoomHousePlantsList, livingRoomDecorativeAccessoriesList,
                 livingRoomFurnitureList, livingRoomLightingAccessoriesList, livingRoomAudioVideoItems);
 
