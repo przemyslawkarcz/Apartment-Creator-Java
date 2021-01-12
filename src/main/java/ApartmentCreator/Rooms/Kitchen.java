@@ -18,7 +18,6 @@ public class Kitchen extends Room{
     public ArrayList<String> kitchenDecorativeAccessoriesList = new ArrayList<>();
     public ArrayList<String> kitchenFurnitureList = new ArrayList<>();
     public ArrayList<String> kitchenLightingAccessoriesList = new ArrayList<>();
-
     public ArrayList<String> kitchenHouseholdItemsList = new ArrayList<>();
     public ArrayList<String> kitchenUtensilList = new ArrayList<>();
 
