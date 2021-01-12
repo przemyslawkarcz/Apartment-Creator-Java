@@ -1,8 +1,8 @@
-package ApartmentCreator.Rooms;
+package ApartmentCreator;
 
 import ApartmentCreator.Exceptions.ApartmentCreatorDataFormatException;
 import ApartmentCreator.PrintClasses.PrintOutBuilder;
-
+import ApartmentCreator.Rooms.*;
 import java.util.Scanner;
 import static ApartmentCreator.ControlClasses.ControlClass.controlsDataFormat;
 import static ApartmentCreator.ControlClasses.ControlClass.controlsRoomsNumber;

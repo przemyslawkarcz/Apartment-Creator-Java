@@ -1,6 +1,6 @@
 package ApartmentCreator;
 
-import static ApartmentCreator.Rooms.ApartmentBuilder.createsApartment;
+import static ApartmentCreator.ApartmentBuilder.createsApartment;
 
 public class Main {
 
