@@ -179,7 +179,7 @@ public class BathRoom extends Room {
                 '}';
     }
 
-    // main method which builds kitchen
+    // main method which builds bathroom
     public BathRoom createsBathRoom(){
 
         BathRoom bathRoom = new BathRoom("Bathroom", Apartment.getApartmentHeight(), 5, 5, Colors.Grey10,
