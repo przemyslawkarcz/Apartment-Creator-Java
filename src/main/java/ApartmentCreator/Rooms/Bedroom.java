@@ -23,6 +23,10 @@ public class Bedroom extends Room {
 
     public Bedroom () {}
 
+    public Bedroom(String bedroomName) {
+        this.bedroomName = bedroomName;
+    }
+
     public Bedroom(String bedroomName, Integer bedroomHeight, Integer bedroomWidth, Integer bedroomLength, Colors wallColors,
                    ArrayList<String> bedroomWindowAccessoriesList, ArrayList<String> bedroomHousePlantsList,
                    ArrayList<String> bedroomFurnitureList, ArrayList<String> bedroomLightingAccessoriesList) {
