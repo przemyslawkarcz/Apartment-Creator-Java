@@ -48,4 +48,5 @@ public class WindowAccessories {
                 ", shutter='" + shutter + '\'' +
                 '}';
     }
+
 }

@@ -78,4 +78,5 @@ public class HouseholdItems {
                 ", foodProcessor='" + foodProcessor + '\'' +
                 '}';
     }
+
 }

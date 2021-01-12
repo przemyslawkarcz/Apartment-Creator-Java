@@ -18,4 +18,5 @@ public class BathRoomPersonalItems {
                 "towels='" + towels + '\'' +
                 '}';
     }
+
 }

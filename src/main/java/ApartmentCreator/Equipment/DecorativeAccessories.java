@@ -38,4 +38,5 @@ public class DecorativeAccessories {
                 ", posters='" + posters + '\'' +
                 '}';
     }
+
 }
