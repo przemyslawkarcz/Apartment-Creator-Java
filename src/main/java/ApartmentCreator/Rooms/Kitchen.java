@@ -2,9 +2,7 @@ package ApartmentCreator.Rooms;
 
 import ApartmentCreator.Colors.Colors;
 import ApartmentCreator.Equipment.*;
-
 import java.util.ArrayList;
-
 import static ApartmentCreator.Colors.Colors.Grey60;
 
 public class Kitchen extends Room{
@@ -160,6 +158,7 @@ public class Kitchen extends Room{
                 '}';
     }
 
+    // main method that builds a kitchen
     public Kitchen createsKitchen(){
 
         Kitchen kitchen = new Kitchen("Kitchen", Apartment.getApartmentHeight(), 10, 10, Grey60,
