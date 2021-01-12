@@ -5,7 +5,6 @@ import ApartmentCreator.Equipment.Furniture;
 import ApartmentCreator.Equipment.HousePlants;
 import ApartmentCreator.Equipment.LightingAccessories;
 import ApartmentCreator.Equipment.WindowAccessories;
-
 import java.util.ArrayList;
 
 public class Bedroom extends Room {
@@ -126,6 +125,7 @@ public class Bedroom extends Room {
                 '}';
     }
 
+    // main method that builds a bedroom
     public Bedroom createsBedRoom(){
 
         Integer bedRoomCounter = ApartmentBuilder.counter;
