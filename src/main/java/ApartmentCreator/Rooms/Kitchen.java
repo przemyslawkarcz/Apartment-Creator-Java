@@ -24,6 +24,10 @@ public class Kitchen extends Room{
 
     public Kitchen() {}
 
+    public Kitchen(String kitchenName) {
+        this.kitchenName = kitchenName;
+    }
+
     public Kitchen(String kitchenName, Integer kitchenHeight, Integer kitchenWidth, Integer kitchenLength, Colors wallColors,
                    ArrayList<String> kitchenWindowAccessoriesList, ArrayList<String> kitchenHousePlantsList,
                    ArrayList<String> kitchenDecorativeAccessoriesList, ArrayList<String> kitchenFurnitureList, ArrayList<String> kitchenLightingAccessoriesList,
