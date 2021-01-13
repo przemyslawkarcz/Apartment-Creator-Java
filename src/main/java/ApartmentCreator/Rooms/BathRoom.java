@@ -17,7 +17,6 @@ public class BathRoom extends Room {
     public ArrayList<String> bathRoomDecorativeAccessoriesList = new ArrayList<>();
     public ArrayList<String> bathRoomFurnitureList = new ArrayList<>();
     public ArrayList<String> bathRoomLightingAccessoriesList = new ArrayList<>();
-
     public ArrayList<String> bathRoomHouseholdItemsList = new ArrayList<>();
     public ArrayList<String> bathroomFittings = new ArrayList<>();
     public ArrayList<String> bathroomToiletries = new ArrayList<>();
