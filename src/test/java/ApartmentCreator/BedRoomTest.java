@@ -8,7 +8,6 @@ import ApartmentCreator.Equipment.WindowAccessories;
 import ApartmentCreator.Rooms.Bedroom;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 
 public class BedRoomTest {
@@ -54,5 +53,5 @@ public class BedRoomTest {
         bedroomLightingAccessoriesList.add(lightingAccessories.getWallLamp());
         Assertions.assertEquals("New bedroom wall lamp", new_bedroom.getBedroomLightingAccessoriesList().get(0));
     }
-    
+
 }
