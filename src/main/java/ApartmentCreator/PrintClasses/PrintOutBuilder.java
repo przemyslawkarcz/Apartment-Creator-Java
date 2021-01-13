@@ -70,9 +70,9 @@ public class PrintOutBuilder {
             System.out.println("Bathroom furniture: " + next.getBathRoomFurnitureList());
             System.out.println("Bathroom lighting accessories: " + next.getBathRoomLightingAccessoriesList());
             System.out.println("Bathroom households items: " + next.getBathRoomHouseholdItemsList());
-            System.out.println("Bathroom fittings: " + next.getBathroomFittings());
-            System.out.println("Bathroom toiletries: " + next.getBathroomToiletries());
-            System.out.println("Bathroom personal items: " + next.getBathRoomPersonalItems());
+            System.out.println("Bathroom fittings: " + next.getBathroomFittingsList());
+            System.out.println("Bathroom toiletries: " + next.getBathroomToiletriesList());
+            System.out.println("Bathroom personal items: " + next.getBathRoomPersonalItemsList());
 
         }
 

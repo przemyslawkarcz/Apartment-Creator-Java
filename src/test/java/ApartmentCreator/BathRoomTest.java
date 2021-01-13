@@ -66,17 +66,17 @@ public class BathRoomTest {
         BathRoomFittings bathRoomFittings = new BathRoomFittings();
         bathRoomFittings.setShower("New shower");
         bathroomFittingsList.add(bathRoomFittings.getShower());
-        Assertions.assertEquals("New shower", new_bathroom.getBathroomFittings().get(0));
+        Assertions.assertEquals("New shower", new_bathroom.getBathroomFittingsList().get(0));
 
         BathRoomToiletries bathRoomToiletries = new BathRoomToiletries();
         bathRoomToiletries.setSoaps("New liquid soap");
         bathroomToiletriesList.add(bathRoomToiletries.getSoaps());
-        Assertions.assertEquals("New liquid soap", new_bathroom.getBathroomToiletries().get(0));
+        Assertions.assertEquals("New liquid soap", new_bathroom.getBathroomToiletriesList().get(0));
 
         BathRoomPersonalItems bathRoomPersonalItems = new BathRoomPersonalItems();
         bathRoomPersonalItems.setTowels("New towel");
         bathRoomPersonalItemsList.add(bathRoomPersonalItems.getTowels());
-        Assertions.assertEquals("New towel", new_bathroom.getBathRoomPersonalItems().get(0));
+        Assertions.assertEquals("New towel", new_bathroom.getBathRoomPersonalItemsList().get(0));
 
     }
 

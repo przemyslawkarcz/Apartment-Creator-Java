@@ -18,9 +18,9 @@ public class BathRoom extends Room {
     public ArrayList<String> bathRoomFurnitureList = new ArrayList<>();
     public ArrayList<String> bathRoomLightingAccessoriesList = new ArrayList<>();
     public ArrayList<String> bathRoomHouseholdItemsList = new ArrayList<>();
-    public ArrayList<String> bathroomFittings = new ArrayList<>();
-    public ArrayList<String> bathroomToiletries = new ArrayList<>();
-    public ArrayList<String> bathRoomPersonalItems = new ArrayList<>();
+    public ArrayList<String> bathroomFittingsList = new ArrayList<>();
+    public ArrayList<String> bathroomToiletriesList = new ArrayList<>();
+    public ArrayList<String> bathRoomPersonalItemsList = new ArrayList<>();
 
     public BathRoom() {}
 
@@ -32,7 +32,7 @@ public class BathRoom extends Room {
                     ArrayList<String> bathRoomWindowAccessoriesList, ArrayList<String> bathRoomHousePlantsList,
                     ArrayList<String> bathRoomDecorativeAccessoriesList, ArrayList<String> bathRoomFurnitureList,
                     ArrayList<String> bathRoomLightingAccessoriesList, ArrayList<String> bathRoomHouseholdItemsList,
-                    ArrayList<String> bathroomFittings, ArrayList<String> bathroomToiletries, ArrayList<String> bathRoomPersonalItems) {
+                    ArrayList<String> bathroomFittingsList, ArrayList<String> bathroomToiletriesList, ArrayList<String> bathRoomPersonalItemsList) {
         this.bathRoomName = bathRoomName;
         this.bathRoomHeight = bathRoomHeight;
         this.bathRoomWidth = bathRoomWidth;
@@ -44,9 +44,9 @@ public class BathRoom extends Room {
         this.bathRoomFurnitureList = bathRoomFurnitureList;
         this.bathRoomLightingAccessoriesList = bathRoomLightingAccessoriesList;
         this.bathRoomHouseholdItemsList = bathRoomHouseholdItemsList;
-        this.bathroomFittings = bathroomFittings;
-        this.bathroomToiletries = bathroomToiletries;
-        this.bathRoomPersonalItems = bathRoomPersonalItems;
+        this.bathroomFittingsList = bathroomFittingsList;
+        this.bathroomToiletriesList = bathroomToiletriesList;
+        this.bathRoomPersonalItemsList = bathRoomPersonalItemsList;
     }
 
     public String getBathRoomName() {
@@ -137,28 +137,28 @@ public class BathRoom extends Room {
         this.bathRoomHouseholdItemsList = bathRoomHouseholdItemsList;
     }
 
-    public ArrayList<String> getBathroomFittings() {
-        return bathroomFittings;
+    public ArrayList<String> getBathroomFittingsList() {
+        return bathroomFittingsList;
     }
 
-    public void setBathroomFittings(ArrayList<String> bathroomFittings) {
-        this.bathroomFittings = bathroomFittings;
+    public void setBathroomFittingsList(ArrayList<String> bathroomFittingsList) {
+        this.bathroomFittingsList = bathroomFittingsList;
     }
 
-    public ArrayList<String> getBathroomToiletries() {
-        return bathroomToiletries;
+    public ArrayList<String> getBathroomToiletriesList() {
+        return bathroomToiletriesList;
     }
 
-    public void setBathroomToiletries(ArrayList<String> bathroomToiletries) {
-        this.bathroomToiletries = bathroomToiletries;
+    public void setBathroomToiletriesList(ArrayList<String> bathroomToiletriesList) {
+        this.bathroomToiletriesList = bathroomToiletriesList;
     }
 
-    public ArrayList<String> getBathRoomPersonalItems() {
-        return bathRoomPersonalItems;
+    public ArrayList<String> getBathRoomPersonalItemsList() {
+        return bathRoomPersonalItemsList;
     }
 
-    public void setBathRoomPersonalItems(ArrayList<String> bathRoomPersonalItems) {
-        this.bathRoomPersonalItems = bathRoomPersonalItems;
+    public void setBathRoomPersonalItemsList(ArrayList<String> bathRoomPersonalItemsList) {
+        this.bathRoomPersonalItemsList = bathRoomPersonalItemsList;
     }
 
     @Override
@@ -175,9 +175,9 @@ public class BathRoom extends Room {
                 ", bathRoomFurnitureList=" + bathRoomFurnitureList +
                 ", bathRoomLightingAccessoriesList=" + bathRoomLightingAccessoriesList +
                 ", bathRoomHouseholdItemsList=" + bathRoomHouseholdItemsList +
-                ", bathroomFittings=" + bathroomFittings +
-                ", bathroomToiletries=" + bathroomToiletries +
-                ", bathRoomPersonalItems=" + bathRoomPersonalItems +
+                ", bathroomFittings=" + bathroomFittingsList +
+                ", bathroomToiletries=" + bathroomToiletriesList +
+                ", bathRoomPersonalItems=" + bathRoomPersonalItemsList +
                 '}';
     }
 
@@ -186,7 +186,7 @@ public class BathRoom extends Room {
 
         BathRoom bathRoom = new BathRoom("Bathroom", Apartment.getApartmentHeight(), 5, 5, Colors.Grey10,
                 bathRoomWindowAccessoriesList, bathRoomHousePlantsList, bathRoomDecorativeAccessoriesList, bathRoomFurnitureList,
-                bathRoomLightingAccessoriesList, bathRoomHouseholdItemsList, bathroomFittings, bathroomToiletries, bathRoomPersonalItems);
+                bathRoomLightingAccessoriesList, bathRoomHouseholdItemsList, bathroomFittingsList, bathroomToiletriesList, bathRoomPersonalItemsList);
 
         WindowAccessories windowAccessories = new WindowAccessories();
         windowAccessories.setVerticalBlinds("Vertical blinds");
@@ -224,20 +224,20 @@ public class BathRoom extends Room {
         bathRoomFittings.setShower("Shower");
         bathRoomFittings.setToilet("Toilet");
         bathRoomFittings.setSink("Sink");
-        bathroomFittings.add(bathRoomFittings.getShower());
-        bathroomFittings.add(bathRoomFittings.getToilet());
-        bathroomFittings.add(bathRoomFittings.getSink());
-        setBathroomFittings(bathroomFittings);
+        bathroomFittingsList.add(bathRoomFittings.getShower());
+        bathroomFittingsList.add(bathRoomFittings.getToilet());
+        bathroomFittingsList.add(bathRoomFittings.getSink());
+        setBathroomFittingsList(bathroomFittingsList);
 
         BathRoomToiletries bathRoomToiletrie = new BathRoomToiletries();
         bathRoomToiletrie.setSoaps("Liquid soap");
-        bathroomToiletries.add(bathRoomToiletrie.getSoaps());
-        setBathroomToiletries(bathroomToiletries);
+        bathroomToiletriesList.add(bathRoomToiletrie.getSoaps());
+        setBathroomToiletriesList(bathroomToiletriesList);
 
         BathRoomPersonalItems bathRoomPersonalItem = new BathRoomPersonalItems();
         bathRoomPersonalItem.setTowels("Egyptian cotton towel");
-        bathRoomPersonalItems.add(bathRoomPersonalItem.getTowels());
-        setBathRoomPersonalItems(bathRoomPersonalItems);
+        bathRoomPersonalItemsList.add(bathRoomPersonalItem.getTowels());
+        setBathRoomPersonalItemsList(bathRoomPersonalItemsList);
 
         return bathRoom;
     }
