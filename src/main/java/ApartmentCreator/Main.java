@@ -19,7 +19,10 @@ public class Main {
         //  setNewKitchenLength(5);
         //  setNewKitchenWidth(5);
         //  setNewKitchenColor(Colors.Grey50);
-        //  setNewWindowsAccessories("Curtains with a pattern of 5");
+        //  setNewWindowsAccessories_Blinds("Blinds with 5");
+        //  setNewWindowsAccessories_VerticalBlinds("V.blinds with 5");
+        //  setNewWindowsAccessories_Curtain("Curtain with 5");
+        //  setNewWindowsAccessories_Shutter("Shutter with 5");
         //  setNewHousePlants("5 orchids");
         //  setNewDecorativeAccessories("5 palms picture");
 

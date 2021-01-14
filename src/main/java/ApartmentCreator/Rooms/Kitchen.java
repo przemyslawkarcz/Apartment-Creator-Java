@@ -5,7 +5,6 @@ import ApartmentCreator.Equipment.*;
 import ApartmentCreator.KitchenRebuilder;
 
 import java.util.ArrayList;
-import static ApartmentCreator.Colors.Colors.Grey60;
 
 public class Kitchen extends Room{
 
@@ -173,8 +172,14 @@ public class Kitchen extends Room{
                 kitchenFurnitureList, kitchenLightingAccessoriesList, kitchenHouseholdItemsList, kitchenUtensilList);
 
         WindowAccessories windowAccessories = new WindowAccessories();
-        windowAccessories.setBlind(KitchenRebuilder.getDefaultWindowsAccessories());
+        windowAccessories.setBlind(KitchenRebuilder.getDefaultWindowsAccessories_Blinds());
+        windowAccessories.setVerticalBlinds(KitchenRebuilder.getDefaultWindowsAccessories_VerticalBlinds());
+        windowAccessories.setCurtain(KitchenRebuilder.getDefaultWindowsAccessories_Curtain());
+        windowAccessories.setShutter(KitchenRebuilder.getDefaultWindowsAccessories_Shutter());
         kitchenWindowAccessoriesList.add(windowAccessories.getBlind());
+        kitchenWindowAccessoriesList.add(windowAccessories.getVerticalBlinds());
+        kitchenWindowAccessoriesList.add(windowAccessories.getCurtain());
+        kitchenWindowAccessoriesList.add(windowAccessories.getShutter());
         setKitchenWindowAccessoriesList(kitchenWindowAccessoriesList);
 
         HousePlants housePlants = new HousePlants();

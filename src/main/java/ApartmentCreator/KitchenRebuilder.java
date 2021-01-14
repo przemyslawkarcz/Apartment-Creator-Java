@@ -10,7 +10,12 @@ public class KitchenRebuilder extends Kitchen {
     public static Integer defaultKitchenLength = 10;
     public static Integer defaultKitchenWidth = 10;
     public static Colors defaultKitchenColor = Colors.Grey20;
-    public static String defaultWindowsAccessories = "Blind";
+
+    public static String defaultWindowsAccessories_Blinds = "Blind";
+    public static String defaultWindowsAccessories_VerticalBlinds = "";
+    public static String defaultWindowsAccessories_Curtain = "";
+    public static String defaultWindowsAccessories_Shutter = "";
+
     public static String defaultHousePlants = "Orchids";
     public static String defaultDecorativeAccessories = "Moraine Lake picture";
 
@@ -46,12 +51,36 @@ public class KitchenRebuilder extends Kitchen {
         KitchenRebuilder.defaultKitchenColor = defaultKitchenColor;
     }
 
-    public static String getDefaultWindowsAccessories() {
-        return defaultWindowsAccessories;
+    public static String getDefaultWindowsAccessories_Blinds() {
+        return defaultWindowsAccessories_Blinds;
     }
 
-    public static void setNewWindowsAccessories(String defaultWindowsAccessories) {
-        KitchenRebuilder.defaultWindowsAccessories = defaultWindowsAccessories;
+    public static void setNewWindowsAccessories_Blinds(String defaultWindowsAccessories) {
+        KitchenRebuilder.defaultWindowsAccessories_Blinds = defaultWindowsAccessories;
+    }
+
+    public static String getDefaultWindowsAccessories_VerticalBlinds() {
+        return defaultWindowsAccessories_VerticalBlinds;
+    }
+
+    public static void setNewWindowsAccessories_VerticalBlinds(String defaultWindowsAccessories_VerticalBlinds) {
+        KitchenRebuilder.defaultWindowsAccessories_VerticalBlinds = defaultWindowsAccessories_VerticalBlinds;
+    }
+
+    public static String getDefaultWindowsAccessories_Curtain() {
+        return defaultWindowsAccessories_Curtain;
+    }
+
+    public static void setNewWindowsAccessories_Curtain(String defaultWindowsAccessories_Curtain) {
+        KitchenRebuilder.defaultWindowsAccessories_Curtain = defaultWindowsAccessories_Curtain;
+    }
+
+    public static String getDefaultWindowsAccessories_Shutter() {
+        return defaultWindowsAccessories_Shutter;
+    }
+
+    public static void setNewWindowsAccessories_Shutter(String defaultWindowsAccessories_Shutter) {
+        KitchenRebuilder.defaultWindowsAccessories_Shutter = defaultWindowsAccessories_Shutter;
     }
 
     public static String getDefaultHousePlants() {
