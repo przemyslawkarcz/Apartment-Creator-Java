@@ -2,6 +2,8 @@ package ApartmentCreator.Rooms;
 
 import ApartmentCreator.Colors.Colors;
 import ApartmentCreator.Equipment.*;
+import ApartmentCreator.KitchenRebuilder;
+
 import java.util.ArrayList;
 import static ApartmentCreator.Colors.Colors.Grey60;
 
@@ -164,22 +166,24 @@ public class Kitchen extends Room{
     // main method that builds a kitchen
     public Kitchen createsKitchen(){
 
-        Kitchen kitchen = new Kitchen("Kitchen", Apartment.getApartmentHeight(), 10, 10, Grey60,
+        Kitchen kitchen = new Kitchen(KitchenRebuilder.getDefaultKitchenName(), Apartment.getApartmentHeight(),
+                KitchenRebuilder.getDefaultKitchenWidth(), KitchenRebuilder.getDefaultKitchenLength(),
+                KitchenRebuilder.getDefaultKitchenColor(),
                 kitchenWindowAccessoriesList, kitchenHousePlantsList, kitchenDecorativeAccessoriesList,
                 kitchenFurnitureList, kitchenLightingAccessoriesList, kitchenHouseholdItemsList, kitchenUtensilList);
 
         WindowAccessories windowAccessories = new WindowAccessories();
-        windowAccessories.setBlind("Blind");
+        windowAccessories.setBlind(KitchenRebuilder.getDefaultWindowsAccessories());
         kitchenWindowAccessoriesList.add(windowAccessories.getBlind());
         setKitchenWindowAccessoriesList(kitchenWindowAccessoriesList);
 
         HousePlants housePlants = new HousePlants();
-        housePlants.setFlowers("Orchids");
+        housePlants.setFlowers(KitchenRebuilder.getDefaultHousePlants());
         kitchenHousePlantsList.add(housePlants.getFlowers());
         setKitchenHousePlantsList(kitchenHousePlantsList);
 
         DecorativeAccessories decorativeAccessories = new DecorativeAccessories();
-        decorativeAccessories.setPictures("Moraine Lake picture");
+        decorativeAccessories.setPictures(KitchenRebuilder.getDefaultDecorativeAccessories());
         kitchenDecorativeAccessoriesList.add(decorativeAccessories.getPictures());
         setKitchenDecorativeAccessoriesList(kitchenDecorativeAccessoriesList);
 
