@@ -184,7 +184,7 @@ public class BathRoom extends Room {
     // main method which builds bathroom
     public BathRoom createsBathRoom(){
 
-        BathRoom bathRoom = new BathRoom("Bathroom", Apartment.getApartmentHeight(), 5, 5, Colors.Grey10,
+        BathRoom bathRoom = new BathRoom("Bathroom", Apartment.getApartmentHeight(), 10, 10, Colors.Grey10,
                 bathRoomWindowAccessoriesList, bathRoomHousePlantsList, bathRoomDecorativeAccessoriesList, bathRoomFurnitureList,
                 bathRoomLightingAccessoriesList, bathRoomHouseholdItemsList, bathroomFittingsList, bathroomToiletriesList, bathRoomPersonalItemsList);
 

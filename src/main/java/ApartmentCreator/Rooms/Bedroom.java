@@ -136,7 +136,7 @@ public class Bedroom extends Room {
         Integer bedRoomCounter = ApartmentBuilder.counter;
         bedRoomCounter++;
 
-        Bedroom bedroom = new Bedroom("Bedroom: " + bedRoomCounter, Apartment.getApartmentHeight(), 4, 4, Colors.Grey40,
+        Bedroom bedroom = new Bedroom("Bedroom: " + bedRoomCounter, Apartment.getApartmentHeight(), 10, 10, Colors.Grey40,
                 bedroomWindowAccessoriesList, bedroomHousePlantsList,
                 bedroomFurnitureList, bedroomLightingAccessoriesList);
 
