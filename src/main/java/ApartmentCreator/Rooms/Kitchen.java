@@ -172,10 +172,10 @@ public class Kitchen extends Room{
                 kitchenFurnitureList, kitchenLightingAccessoriesList, kitchenHouseholdItemsList, kitchenUtensilList);
 
         WindowAccessories windowAccessories = new WindowAccessories();
-        windowAccessories.setBlind(KitchenRebuilder.getDefaultWindowsAccessories_Blinds());
-        windowAccessories.setVerticalBlinds(KitchenRebuilder.getDefaultWindowsAccessories_VerticalBlinds());
-        windowAccessories.setCurtain(KitchenRebuilder.getDefaultWindowsAccessories_Curtain());
-        windowAccessories.setShutter(KitchenRebuilder.getDefaultWindowsAccessories_Shutter());
+        windowAccessories.setBlind(KitchenRebuilder.getDefaultKitchenWindowsAccessories_Blinds());
+        windowAccessories.setVerticalBlinds(KitchenRebuilder.getDefaultKitchenWindowsAccessories_VerticalBlinds());
+        windowAccessories.setCurtain(KitchenRebuilder.getDefaultKitchenWindowsAccessories_Curtain());
+        windowAccessories.setShutter(KitchenRebuilder.getDefaultKitchenWindowsAccessories_Shutter());
         kitchenWindowAccessoriesList.add(windowAccessories.getBlind());
         kitchenWindowAccessoriesList.add(windowAccessories.getVerticalBlinds());
         kitchenWindowAccessoriesList.add(windowAccessories.getCurtain());
@@ -183,20 +183,24 @@ public class Kitchen extends Room{
         setKitchenWindowAccessoriesList(kitchenWindowAccessoriesList);
 
         HousePlants housePlants = new HousePlants();
-        housePlants.setFlowers(KitchenRebuilder.getDefaultHousePlants());
+        housePlants.setFlowers(KitchenRebuilder.getDefaultKitchenHousePlants());
         kitchenHousePlantsList.add(housePlants.getFlowers());
         setKitchenHousePlantsList(kitchenHousePlantsList);
 
         DecorativeAccessories decorativeAccessories = new DecorativeAccessories();
-        decorativeAccessories.setPictures(KitchenRebuilder.getDefaultDecorativeAccessories());
+        decorativeAccessories.setPictures(KitchenRebuilder.getDefaultKitchenDecorativeAccessories_Pictures());
+        decorativeAccessories.setPosters(KitchenRebuilder.getDefaultKitchenDecorativeAccessories_Posters());
+        decorativeAccessories.setPaintings(KitchenRebuilder.getDefaultKitchenDecorativeAccessories_Paintings());
         kitchenDecorativeAccessoriesList.add(decorativeAccessories.getPictures());
+        kitchenDecorativeAccessoriesList.add(decorativeAccessories.getPosters());
+        kitchenDecorativeAccessoriesList.add(decorativeAccessories.getPaintings());
         setKitchenDecorativeAccessoriesList(kitchenDecorativeAccessoriesList);
 
         Furniture furniture = new Furniture();
-        furniture.setHangingKitchenCabinets("Hanging kitchen cabinets");
-        furniture.setUndercounterKitchenCabinets("Undercounter kitchen cabinets");
-        furniture.setKitchenChairs("Kitchen chair");
-        furniture.setKitchenTable("Kitchen table");
+        furniture.setHangingKitchenCabinets(KitchenRebuilder.getDefaultKitchenFurniture_HangingKitchenCabinets());
+        furniture.setUndercounterKitchenCabinets(KitchenRebuilder.getDefaultKitchenFurniture_UndercounterKitchenCabinets());
+        furniture.setKitchenChairs(KitchenRebuilder.getDefaultKitchenFurniture_KitchenChairs());
+        furniture.setKitchenTable(KitchenRebuilder.getDefaultKitchenFurniture_KitchenTable());
         kitchenFurnitureList.add(furniture.getHangingKitchenCabinets());
         kitchenFurnitureList.add(furniture.getUndercounterKitchenCabinets());
         kitchenFurnitureList.add(furniture.getKitchenChairs());
