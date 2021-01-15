@@ -3,7 +3,6 @@ package ApartmentCreator.Rooms;
 import ApartmentCreator.Colors.Colors;
 import ApartmentCreator.Equipment.*;
 import ApartmentCreator.KitchenRebuilder;
-
 import java.util.ArrayList;
 
 public class Kitchen extends Room{
@@ -208,23 +207,29 @@ public class Kitchen extends Room{
         setKitchenFurnitureList(kitchenFurnitureList);
 
         LightingAccessories lightingAccessories = new LightingAccessories();
-        lightingAccessories.setPendantLamp("Pendant lamp");
+        lightingAccessories.setPendantLamp(KitchenRebuilder.getDefaultKitchenLightingAccessories_pendantLamp());
+        lightingAccessories.setFloorLamp(KitchenRebuilder.getDefaultKitchenLightingAccessories_floorLamp());
+        lightingAccessories.setWallLamp(KitchenRebuilder.getDefaultKitchenLightingAccessories_wallLamp());
         kitchenLightingAccessoriesList.add(lightingAccessories.getPendantLamp());
+        kitchenLightingAccessoriesList.add(lightingAccessories.getFloorLamp());
+        kitchenLightingAccessoriesList.add(lightingAccessories.getWallLamp());
         setKitchenLightingAccessoriesList(kitchenLightingAccessoriesList);
 
         HouseholdItems householdItems = new HouseholdItems();
-        householdItems.setWashingMachine("Washing machine");
-        householdItems.setFoodProcessor("Food processor");
-        householdItems.setFridge("Fridge");
-        householdItems.setKettle("Kettle");
-        householdItems.setKitchenHood("Kitchen hood");
-        householdItems.setOven("Kitchen oven");
+        householdItems.setWashingMachine(KitchenRebuilder.getDefaultKitchenHouseHoldsItems_washingMachine());
+        householdItems.setFoodProcessor(KitchenRebuilder.getDefaultKitchenHouseHoldsItems_foodProcessor());
+        householdItems.setFridge(KitchenRebuilder.getDefaultKitchenHouseHoldsItems_fridge());
+        householdItems.setKettle(KitchenRebuilder.getDefaultKitchenHouseHoldsItems_kettle());
+        householdItems.setKitchenHood(KitchenRebuilder.getDefaultKitchenHouseHoldsItems_kitchenHood());
+        householdItems.setOven(KitchenRebuilder.getDefaultKitchenHouseHoldsItems_kitchenOven());
+        householdItems.setInductionHob(KitchenRebuilder.getDefaultKitchenHouseHoldsItems_inductionHob());
         kitchenHouseholdItemsList.add(householdItems.getWashingMachine());
         kitchenHouseholdItemsList.add(householdItems.getFoodProcessor());
         kitchenHouseholdItemsList.add(householdItems.getFridge());
         kitchenHouseholdItemsList.add(householdItems.getKettle());
         kitchenHouseholdItemsList.add(householdItems.getKitchenHood());
         kitchenHouseholdItemsList.add(householdItems.getOven());
+        kitchenHouseholdItemsList.add(householdItems.getInductionHob());
         setKitchenHouseholdItemsList(kitchenHouseholdItemsList);
 
         KitchenUtensil kitchenUtensil = new KitchenUtensil();

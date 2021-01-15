@@ -7,8 +7,11 @@ public class KitchenRebuilder extends Kitchen {
 
     // default kitchen's values
     public static String defaultKitchenName = "Kitchen";
+
     public static Integer defaultKitchenLength = 10;
+
     public static Integer defaultKitchenWidth = 10;
+
     public static Colors defaultKitchenColor = Colors.Grey20;
 
     public static String defaultKitchenWindowsAccessories_Blinds = "Blind";
@@ -26,6 +29,18 @@ public class KitchenRebuilder extends Kitchen {
     public static String defaultKitchenFurniture_UndercounterKitchenCabinets = "Undercounter kitchen cabinets";
     public static String defaultKitchenFurniture_KitchenChairs = "Kitchen chair";
     public static String defaultKitchenFurniture_KitchenTable = "Kitchen table";
+
+    public static String defaultKitchenLightingAccessories_pendantLamp = "Pendant lamp";
+    public static String defaultKitchenLightingAccessories_floorLamp = "";
+    public static String defaultKitchenLightingAccessories_wallLamp = "";
+
+    public static String defaultKitchenHouseHoldsItems_washingMachine = "";
+    public static String defaultKitchenHouseHoldsItems_foodProcessor = "Food processor";
+    public static String defaultKitchenHouseHoldsItems_fridge = "Fridge";
+    public static String defaultKitchenHouseHoldsItems_kettle = "Kettle";
+    public static String defaultKitchenHouseHoldsItems_kitchenHood = "Kitchen hood";
+    public static String defaultKitchenHouseHoldsItems_kitchenOven = "Kitchen oven";
+    public static String defaultKitchenHouseHoldsItems_inductionHob = "Induction hob";
 
     public static String getDefaultKitchenName() {
         return defaultKitchenName;
@@ -153,6 +168,86 @@ public class KitchenRebuilder extends Kitchen {
 
     public static void setNewKitchenFurniture_KitchenTable(String defaultKitchenFurniture_KitchenTable) {
         KitchenRebuilder.defaultKitchenFurniture_KitchenTable = defaultKitchenFurniture_KitchenTable;
+    }
+
+    public static String getDefaultKitchenLightingAccessories_pendantLamp() {
+        return defaultKitchenLightingAccessories_pendantLamp;
+    }
+
+    public static void setNewKitchenLightingAccessories_pendantLamp(String defaultKitchenLightingAccessories_pendantLamp) {
+        KitchenRebuilder.defaultKitchenLightingAccessories_pendantLamp = defaultKitchenLightingAccessories_pendantLamp;
+    }
+
+    public static String getDefaultKitchenLightingAccessories_floorLamp() {
+        return defaultKitchenLightingAccessories_floorLamp;
+    }
+
+    public static void setNewKitchenLightingAccessories_floorLamp(String defaultKitchenLightingAccessories_floorLamp) {
+        KitchenRebuilder.defaultKitchenLightingAccessories_floorLamp = defaultKitchenLightingAccessories_floorLamp;
+    }
+
+    public static String getDefaultKitchenLightingAccessories_wallLamp() {
+        return defaultKitchenLightingAccessories_wallLamp;
+    }
+
+    public static void setNewKitchenLightingAccessories_wallLamp(String defaultKitchenLightingAccessories_wallLamp) {
+        KitchenRebuilder.defaultKitchenLightingAccessories_wallLamp = defaultKitchenLightingAccessories_wallLamp;
+    }
+
+    public static String getDefaultKitchenHouseHoldsItems_washingMachine() {
+        return defaultKitchenHouseHoldsItems_washingMachine;
+    }
+
+    public static void setNewKitchenHouseHoldsItems_washingMachine(String defaultKitchenHouseHoldsItems_washingMachine) {
+        KitchenRebuilder.defaultKitchenHouseHoldsItems_washingMachine = defaultKitchenHouseHoldsItems_washingMachine;
+    }
+
+    public static String getDefaultKitchenHouseHoldsItems_foodProcessor() {
+        return defaultKitchenHouseHoldsItems_foodProcessor;
+    }
+
+    public static void setNewKitchenHouseHoldsItems_foodProcessor(String defaultKitchenHouseHoldsItems_foodProcessor) {
+        KitchenRebuilder.defaultKitchenHouseHoldsItems_foodProcessor = defaultKitchenHouseHoldsItems_foodProcessor;
+    }
+
+    public static String getDefaultKitchenHouseHoldsItems_fridge() {
+        return defaultKitchenHouseHoldsItems_fridge;
+    }
+
+    public static void setNewKitchenHouseHoldsItems_fridge(String defaultKitchenHouseHoldsItems_fridge) {
+        KitchenRebuilder.defaultKitchenHouseHoldsItems_fridge = defaultKitchenHouseHoldsItems_fridge;
+    }
+
+    public static String getDefaultKitchenHouseHoldsItems_kettle() {
+        return defaultKitchenHouseHoldsItems_kettle;
+    }
+
+    public static void setNewKitchenHouseHoldsItems_kettle(String defaultKitchenHouseHoldsItems_kettle) {
+        KitchenRebuilder.defaultKitchenHouseHoldsItems_kettle = defaultKitchenHouseHoldsItems_kettle;
+    }
+
+    public static String getDefaultKitchenHouseHoldsItems_kitchenHood() {
+        return defaultKitchenHouseHoldsItems_kitchenHood;
+    }
+
+    public static void setNewKitchenHouseHoldsItems_kitchenHood(String defaultKitchenHouseHoldsItems_kitchenHood) {
+        KitchenRebuilder.defaultKitchenHouseHoldsItems_kitchenHood = defaultKitchenHouseHoldsItems_kitchenHood;
+    }
+
+    public static String getDefaultKitchenHouseHoldsItems_kitchenOven() {
+        return defaultKitchenHouseHoldsItems_kitchenOven;
+    }
+
+    public static void setNewKitchenHouseHoldsItems_kitchenOven(String defaultKitchenHouseHoldsItems_kitchenOven) {
+        KitchenRebuilder.defaultKitchenHouseHoldsItems_kitchenOven = defaultKitchenHouseHoldsItems_kitchenOven;
+    }
+
+    public static String getDefaultKitchenHouseHoldsItems_inductionHob() {
+        return defaultKitchenHouseHoldsItems_inductionHob;
+    }
+
+    public static void setNewKitchenHouseHoldsItems_inductionHob(String defaultKitchenHouseHoldsItems_inductionHob) {
+        KitchenRebuilder.defaultKitchenHouseHoldsItems_inductionHob = defaultKitchenHouseHoldsItems_inductionHob;
     }
 
 }
