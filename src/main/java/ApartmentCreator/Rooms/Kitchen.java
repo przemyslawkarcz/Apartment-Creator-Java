@@ -233,10 +233,22 @@ public class Kitchen extends Room{
         setKitchenHouseholdItemsList(kitchenHouseholdItemsList);
 
         KitchenUtensil kitchenUtensil = new KitchenUtensil();
-        kitchenUtensil.setCups("Cup");
-        kitchenUtensil.setCups("Cup");
+        kitchenUtensil.setKitchenDishes(KitchenRebuilder.getDefaultKitchenUtensils_dishes());
+        kitchenUtensil.setGlasses(KitchenRebuilder.getDefaultKitchenUtensils_glasses());
+        kitchenUtensil.setCutlery(KitchenRebuilder.getDefaultKitchenUtensils_cutlery());
+        kitchenUtensil.setCups(KitchenRebuilder.getDefaultKitchenUtensils_cups());
+        kitchenUtensil.setMugs(KitchenRebuilder.getDefaultKitchenUtensils_mugs());
+        kitchenUtensil.setHeatResistantDishes(KitchenRebuilder.getDefaultKitchenUtensils_heatResistantDishes());
+        kitchenUtensil.setPans(KitchenRebuilder.getDefaultKitchenUtensils_pans());
+        kitchenUtensil.setPots(KitchenRebuilder.getDefaultKitchenUtensils_pots());
+        kitchenUtensilList.add(kitchenUtensil.getKitchenDishes());
+        kitchenUtensilList.add(kitchenUtensil.getGlasses());
+        kitchenUtensilList.add(kitchenUtensil.getCutlery());
         kitchenUtensilList.add(kitchenUtensil.getCups());
-        kitchenUtensilList.add(kitchenUtensil.getCups());
+        kitchenUtensilList.add(kitchenUtensil.getMugs());
+        kitchenUtensilList.add(kitchenUtensil.getHeatResistantDishes());
+        kitchenUtensilList.add(kitchenUtensil.getPans());
+        kitchenUtensilList.add(kitchenUtensil.getPots());
         setKitchenUtensilList(kitchenUtensilList);
 
         return kitchen;

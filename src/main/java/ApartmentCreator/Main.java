@@ -10,12 +10,13 @@ public class Main {
         //  * * * Set of methods responsible for redecoration of kitchen * * *
         //  default values for kitchen are:
         //          name = Kitchen, length = 10, width = 10, color = Grey20%
-        //          windows accessories = blind,
+        //          windows accessories = blind
         //          house plants = orchids
-        //          decorative accessories = Moraine Lake picture,
+        //          decorative accessories = Moraine Lake picture
         //          furniture = hanging kitchen cabinets, undercounter kitchen cabinets, kitchen chair, kitchen table
         //          lighting accessories = pendant lamp
         //          households = food processor, fridge, kettle, kitchen hood, kitchen oven, induction hob
+        //          utensils = cup, cup
         //          default values for height is 4, this value is constant for whole apartment
 
         //  setNewKitchenName("Kitchen 5");
@@ -50,6 +51,15 @@ public class Main {
         //  setNewKitchenHouseHoldsItems_kitchenHood("5A kitchen hood");
         //  setNewKitchenHouseHoldsItems_kitchenOven("5A kitchen oven");
         //  setNewKitchenHouseHoldsItems_inductionHob("5A induction hob");
+
+        //  setNewKitchenUtensils_cups("5 cups");
+        //  setNewKitchenUtensils_cutlery("5 sets of cutlers");
+        //  setNewKitchenUtensils_dishes("5 set of dishes");
+        //  setNewKitchenUtensils_glasses("5 glasses");
+        //  setNewKitchenUtensils_mugs("5 mugs");
+        //  setNewKitchenUtensils_pans("5 pans");
+        //  setNewKitchenUtensils_pots("5 pots");
+        //  setNewKitchenUtensils_heatResistantDishes("5 heat resistant dishes");
 
         // * * * Main method * * *
         // The method creates apartment which by default consists of 1 bathroom, 1 kitchen and 1 living room

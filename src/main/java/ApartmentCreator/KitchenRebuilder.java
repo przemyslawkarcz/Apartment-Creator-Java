@@ -42,6 +42,15 @@ public class KitchenRebuilder extends Kitchen {
     public static String defaultKitchenHouseHoldsItems_kitchenOven = "Kitchen oven";
     public static String defaultKitchenHouseHoldsItems_inductionHob = "Induction hob";
 
+    public static String defaultKitchenUtensils_dishes = "";
+    public static String defaultKitchenUtensils_cutlery = "";
+    public static String defaultKitchenUtensils_cups = "Cup";
+    public static String defaultKitchenUtensils_mugs = "";
+    public static String defaultKitchenUtensils_glasses = "";
+    public static String defaultKitchenUtensils_pots = "";
+    public static String defaultKitchenUtensils_pans = "";
+    public static String defaultKitchenUtensils_heatResistantDishes = "";
+
     public static String getDefaultKitchenName() {
         return defaultKitchenName;
     }
@@ -248,6 +257,70 @@ public class KitchenRebuilder extends Kitchen {
 
     public static void setNewKitchenHouseHoldsItems_inductionHob(String defaultKitchenHouseHoldsItems_inductionHob) {
         KitchenRebuilder.defaultKitchenHouseHoldsItems_inductionHob = defaultKitchenHouseHoldsItems_inductionHob;
+    }
+
+    public static String getDefaultKitchenUtensils_dishes() {
+        return defaultKitchenUtensils_dishes;
+    }
+
+    public static void setNewKitchenUtensils_dishes(String defaultKitchenUtensils_dishes) {
+        KitchenRebuilder.defaultKitchenUtensils_dishes = defaultKitchenUtensils_dishes;
+    }
+
+    public static String getDefaultKitchenUtensils_cutlery() {
+        return defaultKitchenUtensils_cutlery;
+    }
+
+    public static void setNewKitchenUtensils_cutlery(String defaultKitchenUtensils_cutlery) {
+        KitchenRebuilder.defaultKitchenUtensils_cutlery = defaultKitchenUtensils_cutlery;
+    }
+
+    public static String getDefaultKitchenUtensils_cups() {
+        return defaultKitchenUtensils_cups;
+    }
+
+    public static void setNewKitchenUtensils_cups(String defaultKitchenUtensils_cups) {
+        KitchenRebuilder.defaultKitchenUtensils_cups = defaultKitchenUtensils_cups;
+    }
+
+    public static String getDefaultKitchenUtensils_mugs() {
+        return defaultKitchenUtensils_mugs;
+    }
+
+    public static void setNewKitchenUtensils_mugs(String defaultKitchenUtensils_mugs) {
+        KitchenRebuilder.defaultKitchenUtensils_mugs = defaultKitchenUtensils_mugs;
+    }
+
+    public static String getDefaultKitchenUtensils_glasses() {
+        return defaultKitchenUtensils_glasses;
+    }
+
+    public static void setNewKitchenUtensils_glasses(String defaultKitchenUtensils_glasses) {
+        KitchenRebuilder.defaultKitchenUtensils_glasses = defaultKitchenUtensils_glasses;
+    }
+
+    public static String getDefaultKitchenUtensils_pots() {
+        return defaultKitchenUtensils_pots;
+    }
+
+    public static void setNewKitchenUtensils_pots(String defaultKitchenUtensils_pots) {
+        KitchenRebuilder.defaultKitchenUtensils_pots = defaultKitchenUtensils_pots;
+    }
+
+    public static String getDefaultKitchenUtensils_pans() {
+        return defaultKitchenUtensils_pans;
+    }
+
+    public static void setNewKitchenUtensils_pans(String defaultKitchenUtensils_pans) {
+        KitchenRebuilder.defaultKitchenUtensils_pans = defaultKitchenUtensils_pans;
+    }
+
+    public static String getDefaultKitchenUtensils_heatResistantDishes() {
+        return defaultKitchenUtensils_heatResistantDishes;
+    }
+
+    public static void setNewKitchenUtensils_heatResistantDishes(String defaultKitchenUtensils_heatResistantDishes) {
+        KitchenRebuilder.defaultKitchenUtensils_heatResistantDishes = defaultKitchenUtensils_heatResistantDishes;
     }
 
 }
