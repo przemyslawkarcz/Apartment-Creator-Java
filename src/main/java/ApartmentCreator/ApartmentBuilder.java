@@ -108,14 +108,18 @@ public class ApartmentBuilder {
 
 
         // Control printout the whole apartment through an apartment array
+        /*
         System.out.print("\n* * * * * Control printout through apartment array: * * * * * \n");
         for (Room nA:newApartment) {
             System.out.println(nA);
         }
+        */
 
         // Control printout the whole apartment through an apartment field
+        /*
         System.out.println("\n* * * * * Control printout through apartment field: * * * * * ");
         System.out.println(apartment);
+        */
 
     }
 
