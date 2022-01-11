@@ -1,12 +1,10 @@
 package ApartmentCreator;
 
+import ApartmentCreator.ControlClasses.ControlClass;
 import ApartmentCreator.Exceptions.ApartmentCreatorDataFormatException;
 import ApartmentCreator.PrintClasses.PrintOutBuilder;
 import ApartmentCreator.Rooms.*;
 import java.util.Scanner;
-import static ApartmentCreator.ControlClasses.ControlClass.controlsDataFormat;
-import static ApartmentCreator.ControlClasses.ControlClass.controlsRoomsNumber;
-import static ApartmentCreator.PrintClasses.PrintOutBuilder.printsWelcomeContent;
 
 public class ApartmentBuilder {
 
@@ -14,10 +12,13 @@ public class ApartmentBuilder {
     public static Integer returnedEnteredRoomsNumberInTermsOfFormat;
     public static Integer returnedInspectedRoomsNumber;
 
-    public static void createsApartment(){
+    public void createsApartment(){
+
+        ControlClass controlClass = new ControlClass();
+        PrintOutBuilder printOutBuilder = new PrintOutBuilder();
 
         // It is welcome content with choice of number of rooms
-        printsWelcomeContent();
+        printOutBuilder.printsWelcomeContent();
 
         Scanner roomsNumber = new Scanner(System.in);
         String enteredRoomsNumber = roomsNumber.nextLine();
@@ -25,7 +26,7 @@ public class ApartmentBuilder {
 
         // Control block - - - - - - - - - - - - - - - - - - -
         try {
-            returnedEnteredRoomsNumberInTermsOfFormat = controlsDataFormat(enteredRoomsNumber);
+            returnedEnteredRoomsNumberInTermsOfFormat = controlClass.controlsDataFormat(enteredRoomsNumber);
         } catch (ApartmentCreatorDataFormatException e) {
             e.getMessage();
         }
@@ -34,7 +35,7 @@ public class ApartmentBuilder {
             return;
         }
 
-        returnedInspectedRoomsNumber = controlsRoomsNumber(returnedEnteredRoomsNumberInTermsOfFormat);
+        returnedInspectedRoomsNumber = controlClass.controlsRoomsNumber(returnedEnteredRoomsNumberInTermsOfFormat);
 
         if (returnedInspectedRoomsNumber == 7778){
             return;
@@ -74,7 +75,6 @@ public class ApartmentBuilder {
             newApartment[returnedInspectedRoomsNumber] = kitchenReturned;
         }
 
-        PrintOutBuilder printOutBuilder = new PrintOutBuilder();
         printOutBuilder.printsKitchenFeaturesAll();
         // Kitchen end - - - - - - - - - - - - - - - - - - - - - -
 

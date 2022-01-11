@@ -8,7 +8,7 @@ public class PrintOutBuilder {
 
     // the class includes a set of printing methods for furnishing different rooms
 
-    public static void printsWelcomeContent(){
+    public void printsWelcomeContent(){
 
         System.out.println("* * * Welcome to Apartment Creator * * *");
         System.out.println("A bathroom, kitchen and living room are automatically added to each apartment.");

@@ -1,6 +1,5 @@
 package ApartmentCreator;
 
-import static ApartmentCreator.ApartmentBuilder.createsApartment;
 import static ApartmentCreator.KitchenRebuilder.*;
 
 public class MainKitchenRedecoration {
@@ -21,7 +20,7 @@ public class MainKitchenRedecoration {
         //          utensils = cup
         //          default values for height is 4, this value is constant for whole apartment
 
-        //  setNewKitchenName("Kitchen 5");
+        // setNewKitchenName("Kitchen 5");
         //  setNewKitchenLength(5);
         //  setNewKitchenWidth(5);
         //  setNewKitchenColor(Colors.Grey50);
@@ -31,9 +30,9 @@ public class MainKitchenRedecoration {
         //  setNewKitchenWindowsAccessories_Curtain("Curtain with 5");
         //  setNewKitchenWindowsAccessories_Shutter("Shutter with 5");
 
-        //  setNewKitchenHousePlants("5 orchids");
+        // setNewKitchenHousePlants("5 orchids");
 
-        //  setNewKitchenDecorativeAccessories_Pictures("5 palms picture");
+        // setNewKitchenDecorativeAccessories_Pictures("5 palms picture");
         //  setNewKitchenDecorativeAccessories_Posters("Star Wars 5th episode poster");
         //  setNewKitchenDecorativeAccessories_Paintings("5th Element painting");
 
@@ -63,7 +62,8 @@ public class MainKitchenRedecoration {
         //  setNewKitchenUtensils_pots("5 pots");
         //  setNewKitchenUtensils_heatResistantDishes("5 heat resistant dishes");
 
-        createsApartment();
+        ApartmentBuilder apartmentBuilder = new ApartmentBuilder();
+        apartmentBuilder.createsApartment();
 
     }
 

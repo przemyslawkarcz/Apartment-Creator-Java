@@ -5,7 +5,7 @@ import ApartmentCreator.Exceptions.ApartmentCreatorDataFormatException;
 public class ControlClass {
 
     // method that checks data format
-    public static Integer controlsDataFormat(String someText) throws ApartmentCreatorDataFormatException {
+    public Integer controlsDataFormat(String someText) throws ApartmentCreatorDataFormatException {
 
         try {
 
@@ -20,7 +20,7 @@ public class ControlClass {
     }
 
     // method that checks rooms number
-    public static Integer controlsRoomsNumber(Integer someRoomsNumber){
+    public Integer controlsRoomsNumber(Integer someRoomsNumber){
 
         if (someRoomsNumber >= 11 || someRoomsNumber < 0){
             System.out.println("Do not overdo with it :)");
