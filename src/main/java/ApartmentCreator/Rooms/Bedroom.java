@@ -1,6 +1,5 @@
 package ApartmentCreator.Rooms;
 
-import ApartmentCreator.ApartmentBuilder;
 import ApartmentCreator.Colors.Colors;
 import ApartmentCreator.Equipment.Furniture;
 import ApartmentCreator.Equipment.HousePlants;

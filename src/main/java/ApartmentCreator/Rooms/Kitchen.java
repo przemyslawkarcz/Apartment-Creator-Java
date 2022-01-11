@@ -2,7 +2,7 @@ package ApartmentCreator.Rooms;
 
 import ApartmentCreator.Colors.Colors;
 import ApartmentCreator.Equipment.*;
-import ApartmentCreator.KitchenRebuilder;
+
 import java.util.ArrayList;
 
 public class Kitchen extends Room{
