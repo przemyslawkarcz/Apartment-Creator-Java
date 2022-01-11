@@ -64,6 +64,7 @@ public class MainKitchenRedecoration {
 
         ApartmentBuilder apartmentBuilder = new ApartmentBuilder();
         apartmentBuilder.createsApartment();
+        
 
     }
 
