@@ -52,6 +52,7 @@ public class BedRoomTest {
         lightingAccessories.setWallLamp("New bedroom wall lamp");
         bedroomLightingAccessoriesList.add(lightingAccessories.getWallLamp());
         Assertions.assertEquals("New bedroom wall lamp", new_bedroom.getBedroomLightingAccessoriesList().get(0));
+
     }
 
 }

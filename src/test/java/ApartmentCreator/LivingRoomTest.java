@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class LivingRoomTest {
 
     @Test
-    public void createsLivingroom(){
+    public void createsLivingRoom(){
 
         ArrayList<String> livingRoomWindowAccessoriesList = new ArrayList<>();
         ArrayList<String> livingRoomHousePlantsList = new ArrayList<>();
@@ -59,6 +59,7 @@ public class LivingRoomTest {
         audioVideoItems.setTvSet("New Tv set");
         livingRoomAudioVideoItems.add(audioVideoItems.getTvSet());
         Assertions.assertEquals("New Tv set", new_livingroom.getLivingRoomAudioVideoItems().get(0));
+
     }
 
 }
